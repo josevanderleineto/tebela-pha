@@ -1,23 +1,38 @@
-# Gerador de Código de Notação de Autor com Tabela Cutter utilizando JavaScript
-A Notação de Autor é uma parte essencial na catalogação e organização de bibliotecas e acervos. Uma ferramenta fundamental para isso é a Tabela Cutter, um sistema que permite criar códigos únicos para autores, facilitando a busca e localização de obras. Neste contexto, desenvolvi um gerador de Código de Notação de Autor utilizando JavaScript, que incorpora a lógica da Tabela Cutter.
+O que é tabela PHA?
 
-O que é a Tabela Cutter:
-A Tabela Cutter é uma ferramenta utilizada em biblioteconomia para a criação de códigos de classificação de autores. Desenvolvida por Charles Ammi Cutter, essa tabela é uma extensão do sistema de classificação decimal de Dewey. Ela fornece diretrizes para a criação de códigos únicos e concisos para cada autor, o que simplifica a localização de obras em uma biblioteca.
+A tabela PHA é uma tabela de codificação alfanumérica utilizada para identificar autores em bibliotecas. Foi desenvolvida pela bibliotecária brasileira Heloísa de Almeida Prado e publicada pela primeira vez em 1964.
 
-Como funciona o sistema:
-O sistema utiliza os elementos do nome do autor para gerar um código exclusivo. A Tabela Cutter divide o alfabeto em seções, cada uma associada a uma faixa específica de letras. Os códigos gerados consistem em uma combinação do código da seção correspondente à primeira letra do sobrenome do autor e uma sequência adicional baseada nas letras subsequentes do sobrenome.
+A tabela PHA é baseada na tabela Cutter-Sanborn, que foi desenvolvida pelo bibliotecário americano Charles Ammi Cutter. A tabela Cutter-Sanborn é uma tabela de codificação alfanumérica utilizada para identificar autores em bibliotecas em todo o mundo.
 
-Gerador de Código de Notação de Autor com JavaScript:
-O gerador que desenvolvi utiliza JavaScript para automatizar o processo de criação do código. Ele recebe o nome completo do autor como entrada e gera o código de acordo com as regras da Tabela Cutter. Isso economiza tempo e evita erros humanos, tornando o processo mais eficiente e preciso.
+A tabela PHA é semelhante à tabela Cutter-Sanborn, mas foi adaptada para atender às necessidades das bibliotecas brasileiras. A tabela PHA inclui mais letras e símbolos do que a tabela Cutter-Sanborn, o que permite que ela seja usada para codificar sobrenomes brasileiros mais complexos.
 
-Importância do Sistema:
+Como funciona a tabela PHA?
 
-Organização Eficiente: A utilização da Tabela Cutter e do gerador de código permite uma organização eficiente das obras na biblioteca, facilitando a localização por autor.
-Padronização: Ao seguir um sistema padronizado, as bibliotecas podem se comunicar de maneira mais eficaz, facilitando a troca de informações sobre suas coleções.
-Economia de Tempo: A automação do processo de geração de códigos economiza tempo dos bibliotecários, permitindo que se concentrem em tarefas mais complexas e estratégicas.
-Conclusão:
-A combinação da Tabela Cutter com o gerador de código em JavaScript representa um avanço significativo na catalogação de obras em bibliotecas. Essa abordagem não apenas simplifica a organização, mas também contribui para a padronização e eficiência no gerenciamento de acervos, proporcionando benefícios duradouros para o sistema bibliotecário.
+A tabela PHA é usada para identificar autores em bibliotecas por meio de um código numérico. O código é composto por três letras ou símbolos, que são selecionados da tabela. O primeiro símbolo é a inicial do sobrenome do autor, o segundo símbolo é uma letra ou símbolo adicional que ajuda a distinguir entre autores com sobrenomes iguais, e o terceiro símbolo é uma letra ou símbolo que ajuda a organizar os livros do autor na estante.
 
+Por exemplo, o nome do autor "José de Alencar" é codificado como "J10" na tabela PHA. O primeiro símbolo, "J", é a inicial do sobrenome do autor. O segundo símbolo, "1", é uma letra adicional que ajuda a distinguir entre autores com o sobrenome "Alencar". O terceiro símbolo, "0", é uma letra que ajuda a organizar os livros do autor na estante.
+
+Como funciona o código que você desenvolveu?
+
+O código que você desenvolveu utiliza a tabela PHA para gerar um código de autor para um dado nome de autor. O código funciona da seguinte forma:
+
+A função removeAcentuacao() remove os acentos do nome de autor.
+A função selecionaPha() itera pela tabela PHA, buscando uma correspondência para o nome de autor.
+A função processaPha() chama a função selecionaPha() para gerar o código de autor.
+O código de autor gerado pelo seu código é composto por três partes:
+
+A primeira parte é a inicial do sobrenome do autor.
+A segunda parte é uma letra ou símbolo adicional que ajuda a distinguir entre autores com sobrenomes iguais.
+A terceira parte é uma letra ou símbolo que ajuda a organizar os livros do autor na estante.
+Por exemplo, o código de autor gerado para o nome "José de Alencar" é "J10". O primeiro símbolo, "J", é a inicial do sobrenome do autor. O segundo símbolo, "1", é uma letra adicional que ajuda a distinguir entre autores com o sobrenome "Alencar". O terceiro símbolo, "0", é uma letra que ajuda a organizar os livros do autor na estante.
+
+Observações
+
+O seu código utiliza um arquivo CSV para armazenar a tabela PHA. Você pode substituir esse arquivo por uma tabela PHA em outro formato, como JSON ou XML.
+O seu código não trata de nomes de autor com acentos. Você pode adicionar um tratamento para esses nomes ao código.
+Conclusão
+
+O código que você desenvolveu é uma implementação simples da tabela PHA. O código pode ser usado para gerar códigos de autor para nomes de autores brasileiros.
 
 
 
